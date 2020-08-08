@@ -12,10 +12,13 @@ class ProductController extends Controller {
     // $rp = result per page
     private $rp = 2;
      
-
     public function index() {
         $products = Product::all(); // เก็บสินค้าทั้งหมดในตัวแปร
         return view('product/index', compact('products'));
+    }
+
+    public function edit($id = null) {
+        return view('product/edit');
     }
 
     public function search(Request $request) {
@@ -33,5 +36,7 @@ class ProductController extends Controller {
 
         return view('product/index', compact('products'));
     }
+
+
 
 }
