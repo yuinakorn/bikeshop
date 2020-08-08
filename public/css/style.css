@@ -1,0 +1,16 @@
+.bs_table {
+    margin: 0;
+}
+
+.bs_table thead tr th {
+    text-align: center;
+}
+
+.bs_table tfoot {
+    text-align: center;
+}
+
+.bs_btn_black {
+    background-color: #0e616e;
+    color: white;
+}
